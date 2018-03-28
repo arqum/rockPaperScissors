@@ -1,0 +1,93 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RPS_Assignment
+{
+    class Player
+    {
+        public string DeterminePlayer(String Player, String type)
+        {
+
+            switch (type)
+            {
+                case "1":
+                    Console.WriteLine(Player + " is a Human");
+                    return "Human";
+
+                case "2":
+                    Console.WriteLine(Player + " is a Random Computer");
+                    return "Random";
+                case "3":
+                    Console.WriteLine(Player + " is a Super Quantum Computer");
+
+                    return "Quantom";
+
+
+                default:
+                    return "nothing";
+                //Code
+            }
+
+        }
+
+        public void PlayerSelection(String Player, String selection, string type)
+        {
+
+
+            if (type == "Human")
+            {
+
+                switch (selection)
+                {
+                    case "rock":
+                        Console.WriteLine(Player + " selected rock");
+                        break;
+                    case "paper":
+                        Console.WriteLine(Player + " selected paper");
+                        break;
+                    case "scissors":
+                        Console.WriteLine(Player + " selected scissors");
+
+                        break;
+                    default:
+                        //Code
+                        break;
+                }
+
+
+            }
+
+
+        }
+
+        //overloading to catch non-human cases
+        public void PlayerSelection(String Player, string type)
+        {
+
+
+            if (type == "Random")
+            {
+
+                Core core = new Core();
+                string randomSelection = core.RandomGenerator();
+                Console.WriteLine(type + " has selected " + randomSelection);
+            }
+            else
+            {
+                Core core = new Core();
+                string randomSelection = core.RandomGenerator();
+                Console.WriteLine(type + " has selected " + randomSelection);
+
+            }
+
+
+        }
+
+
+
+
+    }
+}

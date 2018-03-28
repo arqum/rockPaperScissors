@@ -1,0 +1,6 @@
+c:\users\user1\documents\visual studio 2013\Projects\RPS_Assignment\RPS_Assignment\bin\Debug\RPS_Assignment.exe.config
+c:\users\user1\documents\visual studio 2013\Projects\RPS_Assignment\RPS_Assignment\bin\Debug\RPS_Assignment.exe
+c:\users\user1\documents\visual studio 2013\Projects\RPS_Assignment\RPS_Assignment\bin\Debug\RPS_Assignment.pdb
+c:\users\user1\documents\visual studio 2013\Projects\RPS_Assignment\RPS_Assignment\obj\Debug\RPS_Assignment.csprojResolveAssemblyReference.cache
+c:\users\user1\documents\visual studio 2013\Projects\RPS_Assignment\RPS_Assignment\obj\Debug\RPS_Assignment.exe
+c:\users\user1\documents\visual studio 2013\Projects\RPS_Assignment\RPS_Assignment\obj\Debug\RPS_Assignment.pdb

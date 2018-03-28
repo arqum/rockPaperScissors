@@ -1,0 +1,55 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RPS_Assignment
+{
+    class Core
+    {
+        public string RandomGenerator()
+        {
+            string[] selectionsRepo = new string[3];
+            selectionsRepo[0] = "rock";
+            selectionsRepo[1] = "paper";
+            selectionsRepo[2] = "scissors";
+
+
+            Random random = new Random();
+            int randSelection = random.Next(0, selectionsRepo.Length);
+
+
+            return selectionsRepo[randSelection];
+
+        }
+
+        public string GameEngine(string p1_selection, string p2_selection)
+        {
+            while (p1_selection != p2_selection)
+            {
+                if (p1_selection == "rock" && p2_selection == "scissors")
+                {
+
+                    return "Rock beats Scissors! \n Player 1 wins this round." ;
+                }
+                else if (p1_selection == "Scissors" && p2_selection == "paper")
+                {
+
+                    return "Scissors beats Paper! \n Player 1 wins this round.";
+                }
+                else if (p1_selection == "paper" && p2_selection == "rock")
+                {
+
+                    return "Paper beats rock! \n Player 1 wins this round.";
+                }
+
+
+            }
+
+
+            return "Both same! Select again!";
+
+        }
+    }
+}
